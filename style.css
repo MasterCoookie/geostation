@@ -1,0 +1,140 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+nav div {
+    flex: 1;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: all 1.5s ease-in-out;
+}
+
+.transform {
+    flex: 50;
+    filter: grayscale(0%) !important;
+    cursor: default;
+}
+
+.backed {
+    flex: 1 !important;
+    filter: grayscale(100%) !important;
+}
+
+nav div h4 {
+    height: 25%;
+    margin-top: 37.5vh;
+    position: relative;
+    overflow: hidden;
+}
+
+nav div h4 p {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.subtitle {
+    text-align: center;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: max-content;
+}
+
+.transform .subtitle {
+    display: block;
+    opacity: 1;
+    /* position: relative; */
+}
+
+.transform .back-arrow, .transform .down-arrow {
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    color: white;
+    z-index: 9;
+    cursor: pointer;
+    font-size: 55px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.back-arrow {
+    right: 20px;
+    top: 20px;    
+}
+
+.down-arrow {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 20px;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main div {
+    border: 1px dashed blue;
+}
+
+main div p {
+    text-align: center;
+    padding-top: 45px;
+}
+
+.back-arrow:hover {
+    right: 32px;
+}
+
+.down-arrow:hover {
+    bottom: 32px;
+}
+
+nav div:nth-child(1) {
+    background-image: url(bcg/1.jpg);
+}
+
+nav div:nth-child(2) {
+    background-image: url(bcg/2.jpg);
+}
+
+nav div:nth-child(3) {
+    background-image: url(bcg/3.jpg);
+}
+
+nav div:nth-child(4) {
+    background-image: url(bcg/4.jpg);
+}
+
+nav div:nth-child(5) {
+    background-image: url(bcg/5.jpg);
+}
