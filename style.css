@@ -6,6 +6,7 @@ html, body {
     font-family: 'Nunito Sans', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: #242323;
 }
 
 nav {
@@ -96,19 +97,27 @@ nav div h4 p {
 }
 
 main {
-    height: 100vh;
+    height: 85vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 15vh;
+    color: white;
 }
 
 main div {
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
 }
 
 main div p {
     text-align: center;
     padding-top: 45px;
+    font-size: 32px;
+}
+
+main div p:nth-child(2) {
+    font-size: 16px;
+    padding: 0 32px;
 }
 
 .back-arrow:hover {
