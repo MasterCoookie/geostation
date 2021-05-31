@@ -129,7 +129,7 @@ main div p:nth-child(2) {
 }
 
 nav div:nth-child(1) {
-    background-image: url(bcg/1.jpg);
+    background-image: url(bcg/3.jpg);
 }
 
 nav div:nth-child(2) {
@@ -137,7 +137,7 @@ nav div:nth-child(2) {
 }
 
 nav div:nth-child(3) {
-    background-image: url(bcg/3.jpg);
+    background-image: url(bcg/1.jpg);
 }
 
 nav div:nth-child(4) {
