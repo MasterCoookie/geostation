@@ -30,10 +30,17 @@ nav div {
     cursor: default;
 }
 
+
 .backed {
     flex: 1 !important;
     filter: grayscale(100%) !important;
 }
+
+.nullflex {
+    flex: 0 !important;
+    /* width: 0 !important; */
+}
+
 
 nav div h4 {
     height: 25%;
