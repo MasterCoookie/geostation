@@ -112,8 +112,39 @@ main {
     color: white;
 }
 
-main div {
+#contact-container {
     /* border: 1px dashed blue; */
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: none;
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+
+.transparent {
+    opacity: 0 !important;
+}
+
+#contact-container img {
+    height: 30vh;
+    position: absolute;
+    margin-top: 35vh;
+    margin-left: 10vw;
+}
+
+#contact-data {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    /* border: 1px dashed blue; */
+}
+
+.contents {
+    display: none;
 }
 
 main div p {

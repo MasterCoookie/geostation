@@ -2,7 +2,10 @@ let clicks = Array.from(document.getElementsByClassName('click'));
 let back_arrows = Array.from(document.getElementsByClassName('back-arrow'));
 let down_arrows = Array.from(document.getElementsByClassName('down-arrow'));
 let locker = true;
-let content = document.getElementsByTagName('main');
+let content = document.getElementById('content');
+let contents = Array.from(document.getElementsByClassName('contents'));
+let contactContainer = document.getElementById("contact-container");
+
 
 clicks.forEach(element => {
     element.addEventListener('click', e => {
@@ -14,7 +17,17 @@ clicks.forEach(element => {
                 }
             });
             locker = !locker;
-        }
+            if (e.target.dataset.index == 4) {
+                document.getElementById("contact-header").style.display = "none";
+                contactContainer.style.display = "block";
+                setTimeout(() => {
+                    contactContainer.classList.remove("transparent");
+                }, 500);
+            } else {
+                contents[e.target.dataset.index].style.display = "grid";
+            }
+
+        } 
     });
 });
 
@@ -26,7 +39,11 @@ back_arrows.forEach(element => {
             setTimeout(() => {
                 locker = !locker;
             }, 100);
-            // console.log(click.classList);
+            contactContainer.classList.add("transparent");
+            setTimeout(() => {
+                document.getElementById("contact-header").style.display = "block";
+                contactContainer.style.display = "none";
+            }, 750);
         })
     });
 });
