@@ -90,6 +90,7 @@ nav div h4 p {
     font-size: 55px;
     transition: all 1s ease-in-out;
     opacity: 0;
+    /* color: #000; */
 }
 
 .back-arrow {
@@ -104,12 +105,17 @@ nav div h4 p {
 }
 
 main {
-    height: 85vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 15vh;
+    display: block;
     color: white;
+    padding: 5vh 6vh;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 6fr 1fr 12fr;
+    height: 50vh;
+    align-items: center;
 }
 
 #contact-container {
@@ -184,4 +190,46 @@ nav div:nth-child(4) {
 
 nav div:nth-child(5) {
     background-image: url(bcg/5.jpg);
+}
+
+
+h6 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+    grid-column: 2;
+    grid-row: 2;
+    color: #fca212;
+}
+
+.content-img {
+    width: 250px;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 auto;
+}
+
+main div p {
+    font-size: 16px;
+    padding: 0 10px;
+    
+}
+
+.paragraph-1 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.paragraph-2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.paragraph-3 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.pointer {
+    color: #fca212;
 }

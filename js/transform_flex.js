@@ -44,6 +44,9 @@ back_arrows.forEach(element => {
                 document.getElementById("contact-header").style.display = "block";
                 contactContainer.style.display = "none";
             }, 750);
+        });
+        contents.forEach(contentElement => {
+            contentElement.style.display = "none";
         })
     });
 });
