@@ -5,6 +5,7 @@ let locker = true;
 let content = document.getElementById('content');
 let contents = Array.from(document.getElementsByClassName('contents'));
 let contactContainer = document.getElementById("contact-container");
+let flags = document.getElementById("langs");
 
 
 clicks.forEach(element => {
@@ -25,6 +26,7 @@ clicks.forEach(element => {
                 }, 500);
             } else {
                 contents[e.target.dataset.index].style.display = "grid";
+                flags.style.display = "none";
             }
 
         } 
@@ -43,6 +45,7 @@ back_arrows.forEach(element => {
             setTimeout(() => {
                 document.getElementById("contact-header").style.display = "block";
                 contactContainer.style.display = "none";
+                flags.style.display = "grid";
             }, 750);
         });
         contents.forEach(contentElement => {
