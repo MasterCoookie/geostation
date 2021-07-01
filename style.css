@@ -107,7 +107,7 @@ nav div h4 p {
 main {
     display: block;
     color: white;
-    padding: 5vh 6vh;
+    width: 100%;
 }
 
 main div {
@@ -116,6 +116,36 @@ main div {
     grid-template-rows: 6fr 1fr 12fr;
     height: 50vh;
     align-items: center;
+    width: 88vw;
+    padding: 5vh 6vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(100%);
+}
+
+main div:nth-child(1) {
+    background-image: url('./bcg/oferta/1.png');
+}
+main div:nth-child(2) {
+    background-image: url('./bcg/oferta/2.png');
+}
+main div:nth-child(3) {
+    background-image: url('./bcg/oferta/3.png');
+}
+main div:nth-child(4) {
+    background-image: url('./bcg/oferta/4.png');
+}
+main div:nth-child(5) {
+    background-image: url('./bcg/oferta/5.png');
+}
+main div:nth-child(6) {
+    background-image: url('./bcg/oferta/6.png');
+}
+
+main div:hover {
+    filter: brightness(105%);
+    transition: all 1.5s ease-in-out;
 }
 
 #contact-container {
@@ -127,6 +157,7 @@ main div {
     display: none;
     transition: all 1s ease-in-out;
     opacity: 1;
+    transition: all 1.5s ease-in-out;
 }
 
 .transparent {
@@ -190,6 +221,7 @@ nav div:nth-child(4) {
 
 nav div:nth-child(5) {
     background-image: url(bcg/5.jpg);
+    filter: none !important;
 }
 
 
@@ -232,4 +264,28 @@ main div p {
 
 .pointer {
     color: #fca212;
+}
+
+.langs {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    width: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.langs a {
+    position: relative;
+}
+
+.langs a div {
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+    border-radius: 25px;
+    background-image: none; /*tu flaga */
+    background-color: red;
+    filter: none !important;
 }
