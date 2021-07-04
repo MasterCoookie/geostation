@@ -2,6 +2,7 @@ let clicks = Array.from(document.getElementsByClassName('click'));
 let back_arrows = Array.from(document.getElementsByClassName('back-arrow'));
 let down_arrows = Array.from(document.getElementsByClassName('down-arrow'));
 let locker = true;
+let done = (getter >= day);
 let content = document.getElementById('content');
 let contents = Array.from(document.getElementsByClassName('contents'));
 let contactContainer = document.getElementById("contact-container");
@@ -10,14 +11,13 @@ let flags = document.getElementById("langs");
 
 clicks.forEach(element => {
     element.addEventListener('click', e => {
-        if(locker) {
+        if(locker && e.target.dataset.index && is && done) {
             element.classList.replace('backed', 'transform');
             clicks.forEach(click => {
                 if(click.dataset.index != e.target.dataset.index) {
                     click.classList.add('nullflex');
                 }
             });
-            locker = !locker;
             if (e.target.dataset.index == 4) {
                 document.getElementById("contact-header").style.display = "none";
                 contactContainer.style.display = "block";
@@ -28,7 +28,7 @@ clicks.forEach(element => {
                 contents[e.target.dataset.index].style.display = "grid";
                 flags.style.display = "none";
             }
-
+            locker = !locker;
         } 
     });
 });
@@ -54,9 +54,9 @@ back_arrows.forEach(element => {
     });
 });
 
+let count = 0;
 down_arrows.forEach(element => {
     element.addEventListener('click', () => {
-        console.log(content);
-        content[0].scrollIntoView();
+        document.getElementById("scrollto").scrollIntoView();
     })
 })
