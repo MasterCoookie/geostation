@@ -162,6 +162,7 @@ main div:hover {
     transition: all 1s ease-in-out;
     opacity: 1;
     transition: all 1.5s ease-in-out;
+    color: #fff;
 }
 
 .transparent {
