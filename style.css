@@ -112,7 +112,7 @@ main {
     width: 100%;
 }
 
-main div {
+#oferta div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 6fr 1fr 12fr;
@@ -128,28 +128,44 @@ main div {
     border-bottom: 1px solid white;
 }
 
-main div:nth-child(1) {
+#oferta div:nth-child(1) {
     background-image: url('./bcg/oferta/1.png');
 }
-main div:nth-child(2) {
+#oferta div:nth-child(2) {
     background-image: url('./bcg/oferta/2.png');
 }
-main div:nth-child(3) {
+#oferta div:nth-child(3) {
     background-image: url('./bcg/oferta/3.png');
 }
-main div:nth-child(4) {
+#oferta div:nth-child(4) {
     background-image: url('./bcg/oferta/4.png');
 }
-main div:nth-child(5) {
+#oferta div:nth-child(5) {
     background-image: url('./bcg/oferta/5.png');
 }
-main div:nth-child(6) {
+#oferta div:nth-child(6) {
     background-image: url('./bcg/oferta/6.png');
 }
 
-main div:hover {
+#oferta div:hover {
     filter: brightness(105%);
     transition: all 1.5s ease-in-out;
+}
+
+#oferta div p {
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+#oferta div p {
+    text-align: center;
+    padding-top: 45px;
+    font-size: 16px;
+}
+
+#oferta div p:nth-child(2) {
+    font-size: 16px;
+    padding: 0 32px;
 }
 
 #contact-container {
@@ -220,17 +236,6 @@ main div:hover {
     display: none;
 }
 
-main div p {
-    text-align: center;
-    padding-top: 45px;
-    font-size: 32px;
-}
-
-main div p:nth-child(2) {
-    font-size: 16px;
-    padding: 0 32px;
-}
-
 .back-arrow:hover {
     right: 32px;
 }
@@ -275,12 +280,6 @@ h6 {
     grid-column: 2;
     grid-row: 1;
     margin: 0 auto;
-}
-
-main div p {
-    font-size: 16px;
-    padding: 0 10px;
-    
 }
 
 .paragraph-1 {
@@ -332,4 +331,87 @@ footer {
     height: 100px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    font-size: 58px;
+    padding: 30px 0;
+}
+
+.rea {
+    display: grid;
+    height: 54vh;
+    width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 5vh 0;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.rea:nth-child(even) {
+    grid-template-areas:
+    "a b"
+    "a c"
+    "d e"
+    "d f";
+}
+
+.rea:nth-child(odd) {
+    grid-template-areas:
+    "b a"
+    "c a"
+    "e d"
+    "f d";
+}
+
+.rea img {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.rea .pic1 {
+    grid-area: a;
+}
+
+.rea .pic2 {
+    grid-area: d;
+}
+
+.rea-title {
+    font-size: 24px;    
+}
+
+.rea .rea-title {
+    grid-area: b;
+}
+
+.rea .rea-body {
+    grid-area: c;
+}
+
+.rea .rea-name {
+    grid-area: e;
+}
+
+.rea-date {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.rea .rea-date {
+    grid-area: f;
+}
+
+#referencje section {
+    display: grid;
+    width: 1024px;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    padding-top: 25px;
 }
