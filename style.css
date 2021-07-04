@@ -327,7 +327,7 @@ main div p {
 }
 
 footer {
-    display: grid;
+    display: none;
     width: 90%;
     height: 100px;
     margin: 0 auto;

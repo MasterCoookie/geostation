@@ -2,6 +2,7 @@ let clicks = Array.from(document.getElementsByClassName('click'));
 let back_arrows = Array.from(document.getElementsByClassName('back-arrow'));
 let down_arrows = Array.from(document.getElementsByClassName('down-arrow'));
 let locker = true;
+let footer = document.getElementById("footer");
 let done = (getter >= day);
 let content = document.getElementById('content');
 let contents = Array.from(document.getElementsByClassName('contents'));
@@ -26,6 +27,7 @@ clicks.forEach(element => {
                 }, 500);
             } else {
                 contents[e.target.dataset.index].style.display = "grid";
+                footer.style.display = "grid";
                 flags.style.display = "none";
             }
             locker = !locker;
@@ -50,6 +52,7 @@ back_arrows.forEach(element => {
         });
         contents.forEach(contentElement => {
             contentElement.style.display = "none";
+            footer.style.display = "none";
         })
     });
 });
