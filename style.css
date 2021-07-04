@@ -350,6 +350,7 @@ header {
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    column-gap: 100px;
 }
 
 .rea:nth-child(even) {
@@ -433,5 +434,5 @@ header {
 }
 
 #partnerzy section img {
-    width: 150px;
+    width: 200px;
 }
