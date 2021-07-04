@@ -320,7 +320,7 @@ h6 {
     height: 50px;
     z-index: 11;
     border-radius: 25px;
-    background-image: none; /*tu flaga */
+    background-image: url('src/flaga.png'); /*tu flaga */
     background-color: red;
     filter: none !important;
 }
