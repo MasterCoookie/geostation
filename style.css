@@ -6,7 +6,7 @@ html, body {
     font-family: 'Ubuntu', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color: #242323;
+    background-color: #171616;  
     font-weight: 300;
 }
 
@@ -34,7 +34,7 @@ nav div {
 
 .backed {
     flex: 1 !important;
-    filter: grayscale(100%) !important;
+    filter: grayscale(1000%) !important;
 }
 
 .nullflex {
@@ -67,7 +67,7 @@ nav div h4 p {
     color: white;
     position: absolute;
     opacity: 0;
-    transition: opacity 3s ease-in-out;
+    transition: opacity 1s ease-in-out;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -153,18 +153,18 @@ main {
 }
 
 #oferta div p {
-    font-size: 16px;
+    font-size: 20px;
     padding: 0 10px;
 }
 
-#oferta div p {
+#oferta div p { /* font size real*/
     text-align: center;
     padding-top: 45px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #oferta div p:nth-child(2) {
-    font-size: 16px;
+    font-size: 20px;
     padding: 0 32px;
 }
 
@@ -267,12 +267,14 @@ nav div:nth-child(5) {
 
 
 h6 {
-    font-size: 32px;
+    font-size: 41px;
     text-align: center;
     margin: 0;
+    padding-top: 10px;
     grid-column: 2;
     grid-row: 2;
     color: #fca212;
+    font-weight: 300;
 }
 
 .content-img {
@@ -320,17 +322,22 @@ h6 {
     height: 50px;
     z-index: 11;
     border-radius: 25px;
-    background-image: url('src/flaga.png'); /*tu flaga */
-    background-color: red;
+    background-image:  url(bcg/f.png); /*tu flaga */
+    background-color: white;
     filter: none !important;
 }
 
 footer {
     display: none;
-    width: 90%;
+    width: 100%;
     height: 80px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
+    font-size: 21px;
+    color:white;
+    border-top: white 1px;
+    background-color: rgb(29, 29, 29);
+
 }
 
 header {
@@ -406,14 +413,18 @@ header {
 .rea .rea-date {
     grid-area: f;
 }
+#referencje{
+    background-image: url("./src/ogl_0.png");
 
+    
+}
 #referencje section {
     display: grid;
     width: 1024px;
     margin: 0 auto;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 10px;
+    gap: 30px;
     padding-top: 25px;
 }
 
@@ -425,14 +436,16 @@ header {
 
 #partnerzy section {
     display: grid;
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 0px 0;
 }
 
 #partnerzy section img {
-    width: 200px;
+    width: 320px;
+    margin-right: 50px;
+    
 }
