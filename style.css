@@ -359,6 +359,7 @@ header {
     text-align: center;
     margin: 0 auto;
     column-gap: 100px;
+    row-gap: 25px;
 }
 
 .rea:nth-child(even) {
