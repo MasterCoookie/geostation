@@ -72,6 +72,7 @@ nav div h4 p {
     transform: translate(-50%, -50%);
     z-index: 10;
     width: max-content;
+    margin-top: -80px;
 }
 
 .transform .subtitle {
@@ -376,6 +377,14 @@ header {
     "f d";
 }
 
+.rea-double {
+    grid-template-areas:
+    "b g"
+    "c h"
+    "e i"
+    "f j";
+}
+
 .rea img {
     width: 400px;
     margin: 0 auto;
@@ -389,7 +398,7 @@ header {
     grid-area: d;
 }
 
-.rea-title {
+.rea-title, .rea-title-2 {
     font-size: 24px;    
 }
 
@@ -405,7 +414,7 @@ header {
     grid-area: e;
 }
 
-.rea-date {
+.rea-date, .rea-date-2 {
     font-weight: 500;
     font-size: 18px;
 }
@@ -432,6 +441,7 @@ header {
     background-color: white;
     color: black;
     padding: 30px 0;
+    background-image: url('');
 }
 
 #partnerzy section {
@@ -447,5 +457,9 @@ header {
 #partnerzy section img {
     width: 320px;
     margin-right: 50px;
-    
 }
+
+#realizacje {
+    background-image: url('');
+}
+
